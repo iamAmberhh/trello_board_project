@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  workspace:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    container_name: workspace
+    volumes:
+      - .:/var/www/app
+    ports:
+      - '5003:5003'
+    entrypoint: 'sh /var/www/app/startup.sh'

@@ -1,0 +1,54 @@
+html.base-theme {
+  // --el-menu-bg-color: var(--el-color-primary);
+  --el-menu-bg-color: #4a4e58;
+  --el-menu-border-color: none;
+  --el-menu-hover-bg-color: #777b84;
+  //Breadcrumb
+  --breadcrumb-no-redirect: #97a8be;
+  //Hamburger
+  --hamburger-width: 20px;
+  --hamburger-height: 20px;
+  //AppMain.vue
+  --app-main-padding: 30px;
+  //Navbar.vue
+  --nav-bar-height: 50px;
+  --nav-bar-box-shadow: 0 1px 4px rgba(0, 21, 41, 0.08);
+  //transition
+  --sideBar-switch-duration: 0.2s;
+  --logo-switch-duration: 1s;
+  --page-transform-duration: 0.2s;
+  --breadcrumb-change-duration: 0.2s;
+  // --pregress-bar-color: #409eff; //#909399
+  
+  // 自訂配色
+  --el-text-color-primary: #72767b;
+  --el-color-primary: #1ca1c1;
+  --el-color-primary-dark-2: #1464CC;
+  --el-color-primary-light-3: #458EED;
+  --el-color-primary-light-5: #6AA4F0;
+  --el-color-primary-light-7: #90BBF4;
+  --el-color-primary-light-8: #B5D2F8;
+  --el-color-primary-light-9: #DAE8FC;
+  --el-color-warning: #fdbf4c;
+  --el-color-warning-dark-2: #DB9E06;
+  --el-color-warning-light-3: #FAC338;
+  --el-color-warning-light-5: #FBCF60;
+  --el-color-warning-light-7: #FCDB88;
+  --el-color-warning-light-8: #FDE7AF;
+  --el-color-warning-light-9: #FEF3D7;
+  --el-color-danger: #ff5c4c;
+  --el-color-danger-dark-2: #F33F3F;
+  --el-color-danger-light-3: #F88C8C;
+  --el-color-danger-light-5: #F99F9F;
+  --el-color-danger-light-7: #FAB3B3;
+  --el-color-danger-light-8: #FBC5C5;
+  --el-color-danger-light-9: #FCD9D9;
+  --el-color-success: #41ad7c;
+  --el-color-success-dark-2: #218252;
+  --el-color-success-light-3: #31C47A;
+  --el-color-success-light-5: #4BD28F;
+  --el-color-success-light-7: #6CDAA3;
+  --el-color-success-light-8: #8DE2B8;
+  --el-color-success-light-9: #AEEACC;
+}
+

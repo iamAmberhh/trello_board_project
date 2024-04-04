@@ -1,0 +1,33 @@
+//leave the padding of  el-scroll sidebar
+.el-scrollbar__view {
+  padding-bottom: 30px;
+}
+
+.el-scrollbar {
+  --el-menu-base-level-padding: 15px;
+}
+
+
+.el-pagination.is-background .el-pager{
+  li:hover{
+    color: white ;
+    background: var( --el-color-warning);
+  }
+
+  li.is-active{
+    background: var( --el-color-warning) !important;
+  }
+}
+
+.el-pagination.is-background{
+  button:hover{
+    color: white ;
+    background: var( --el-color-warning) ;
+  }
+}
+
+.el-input.is-disabled .el-input__inner {
+  color: var(--el-disabled-text-color);
+  -webkit-text-fill-color: var(--el-input-text-color,var(--el-text-color-regular)) !important;
+  cursor: not-allowed;
+}

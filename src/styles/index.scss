@@ -1,0 +1,120 @@
+// 常用 flex column
+@import './scss-suger.scss';
+// 重置 element-plus
+@import './reset-elemenet-plus-style.scss';
+// 動畫
+@import './transition.scss';
+// google font 字型
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap');
+
+
+//reset style
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  color: var(--el-text-color-primary);
+}
+* {
+  box-sizing: border-box;
+  font-family: 'Segoe UI', 'Noto Sans TC', sans-serif, system-ui;
+}
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+span,
+output {
+  display: inline-block;
+  line-height: 1;
+}
+
+//scroll
+@mixin main-show-wh() {
+  height: calc(
+    100vh - #{var(--nav-bar-height)} - #{var(--tag-view-height)} - #{calc(
+        var(--app-main-padding) * 2
+      )}
+  );
+  width: 100%;
+}
+.scroll-y {
+  @include main-show-wh();
+  overflow-y: auto;
+}
+.scroll-x {
+  @include main-show-wh();
+  overflow-x: auto;
+}
+.scroll-xy {
+  @include main-show-wh();
+  overflow: auto;
+}
+
+// utilites
+.bg-white {
+  background: white;
+}
+.fw-bold {
+  font-weight: bold;
+}
+
+// form custom style
+.client-form {
+  .el-form-item {
+    max-width: 500px;
+    margin-bottom: 25px;
+  }
+}
+
+.message-box-style {
+  padding-top: 5px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  .el-message-box__message {
+    margin: 15px 0px;
+  }
+}
+
+.tip-message {
+  color: #f56c6c;
+  height: 30px;
+  font-size: 12px;
+}
+
+.trial-input{
+  .el-input.is-disabled .el-input__inner {
+    text-align: end;
+  }
+}
+
+.title-h2 {
+  border-left: 7px solid var(--el-text-color-primary);
+  padding: 5px 0px 5px 15px;
+  font-weight: bold;
+}
